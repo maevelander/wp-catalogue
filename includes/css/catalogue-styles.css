@@ -1,0 +1,153 @@
+#wpc-catalogue-wrapper {
+}
+#wpc-catalogue-wrapper h4 {
+	font-size:20px;
+	color:#999999;
+	font-weight:normal;
+	margin-bottom: 20px;
+}
+#wpc-col-1 {
+	width:219px;
+	float:left;
+	margin: 0 28px 0 0;
+	line-height: inherit;
+}
+#wpc-col-1 ul {
+	margin:0;
+	padding:0;
+	list-style:none;
+	line-height: inherit;
+}
+#wpc-col-1 ul li {
+	list-style:none;
+	padding: 0;
+	margin: 0;
+	background: url(images/cat-sprtr.gif) repeat-x left bottom;
+}
+#wpc-col-1 ul li:last-child {
+	background: none;
+}
+#wpc-col-1 ul li a {
+	display:block;
+	color:#3d484e;
+	font-size:18px;
+	text-decoration:none;
+	padding:10px 30px 10px 21px;
+	background: url(images/sidebar-sprtr.gif) repeat-y 218px 0;
+	text-transform: capitalize;
+}
+#wpc-col-1 ul li a:hover, #wpc-col-1 ul li.active-wpc-cat a {
+	border-right:none;
+	background:#090 no-repeat left top;
+	color:#ffffff;
+}
+#wpc-col-2 {
+	width: 695px;
+	float:left;
+}
+.wpc-product {
+	border-bottom: #C7C7C7 1px solid;
+	float: left;
+	margin: 0 15px 27px 0;
+}
+.wpc-img {
+	border: 5px solid #dcdbdb;
+	margin-bottom: 10px;
+	background: #dcdbdb;
+	font-size: 0;
+}
+.wpc-next-prev {
+}
+.wpc-next-prev a[rel="next"] {
+	float:right;
+}
+.wpc-img:hover {
+	border: 5px solid #15845e;
+}
+.wpc-img img {
+	border-radius:0;
+	box-shadow: none;
+	height: 110%;
+}
+.wpc-title {
+	color: #15845e;
+	padding: 0 7px 20px;
+	line-height: inherit;
+	margin: 0;
+}
+.wpc-title a {
+	font-size: 14px;
+	color: #333333;
+	text-decoration:none;
+	display:block;
+	background: url(images/arrow.png) no-repeat right 5px;
+}
+.wpc-title a:hover {
+	color: #15845e;
+	background-position: right -18px;
+}
+.wpc-title span {
+	float:right;
+}
+.wpc-paginations {
+	clear:both;
+	padding:0 0 0 7px;
+}
+.product-price {
+	float:right;
+}
+.wpc-paginations a {
+	display:block;
+	width:30px;
+	height:30px;
+	background:url(images/pagination-bg.gif) no-repeat top;
+	float:left;
+	text-align:center;
+	line-height:30px;
+	color:#FFF;
+	text-decoration:none;
+	margin:0 2px;
+}
+.wpc-paginations a:hover, .wpc-paginations .active-wpc-page {
+	background-position:bottom;
+	color:#FFF;
+}
+.product-img-view {
+	float:left;
+	border:#dcdbdb 5px solid;
+	margin:0 14px 0 0;
+	overflow: hidden;
+}
+.wpc-product-img {
+	width:161px;
+	float: right;
+}
+.new-prdct-img {
+	border:#dcdbdb 5px solid;
+	margin-bottom:8px;
+	font-size: 0;
+	line-height: 0;
+}
+.new-prdct-img img {
+	cursor: pointer;
+}
+#wpc-product-gallery {
+	padding: 0 0 20px;
+}
+.clear {
+	clear: both;
+	line-height: 0;
+	font-size: 0;
+}
+.wp-catalogue-bradcrumb {
+	margin:20px 0;
+}
+.entry-content {
+	line-height: inherit !important;
+}
+.wp-catalogue-breadcrumb {
+	padding: 0 0 20px;
+}
+.entry-content img {
+	max-width: inherit !important; /* Fluid images for posts, comments, and widgets */
+}

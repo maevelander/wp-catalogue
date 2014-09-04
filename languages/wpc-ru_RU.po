@@ -1,0 +1,286 @@
+# Copyright (C) 2013 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-catalogue\n"
+"POT-Creation-Date: 2013-08-30 07:47:30+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-11-27 21:37+0300\n"
+"Last-Translator: Kseniya Mullomukhametova <mukhametova@gmail.com>\n"
+"Language-Team: Enigma Plugins\n"
+"X-Generator: Poedit 1.5.4\n"
+
+#: products/order.php:38
+msgid "Custom Taxonomy Order settings "
+msgstr "Настройки класификации порядка настроек"
+
+#: products/order.php:139
+msgid ""
+"Drag and drop items to customise the order of categories in WP Catalogue"
+msgstr "Перетащите элементы чтобы настроить порядок катеогий в WP catalogue"
+
+#: products/order.php:166 products/order.php:335
+#: products/sort-categories.php:57 products/sort-categories.php:74
+#: products/sort-products.php:56 products/sort-products.php:73
+msgid "Save Order"
+msgstr "Сохранить порядок"
+
+#: products/order.php:172
+msgid "No terms found"
+msgstr "Условия не найдены"
+
+#: products/order.php:315
+msgid "Drag and drop items to customise the order of products in WP Catalogue"
+msgstr "Перетащите элементы чтобы настроить порядок продуктов в WP Cataloue"
+
+#: products/order.php:353 settings.php:100
+msgid "Help Improve This Plugin!"
+msgstr "Помогите улучшить этот плагин!"
+
+#: products/order.php:357
+msgid ""
+"Enjoyed this plugin? All donations are used to improve and further develop "
+"this plugin. Thanks for your contributaion."
+msgstr ""
+"Понравился плагин? Все пожертвования будут использованы для того чтобы "
+"улучшить и в дальнейшем развить этот плагин. Спасибо за ваш вклад."
+
+#: products/order.php:368 settings.php:115
+msgid "you can also help by"
+msgstr "вы также можете помочь"
+
+#: products/order.php:368 settings.php:115
+msgid "rating this plugin on wordpress.org"
+msgstr "оценить этот плагин на wordpress.org"
+
+#: products/order.php:378
+msgid "If you are having problems with plugin please talk about them on "
+msgstr "Если у вас есть проблемы с плагином, пожалуйста сообщите о них на "
+
+#: products/order.php:408
+msgid "Order updated successfully."
+msgstr "Порядок успешно обновлен"
+
+#: products/order.php:412
+msgid "An error occured, order has not been saved."
+msgstr "Произошла ошибка, порядок не был сохранен"
+
+#: products/sort-categories.php:54 products/sort-products.php:53
+msgid "Drag and drop items to set the custom order."
+msgstr "Перетащите элементы чтобы задать произвольный порядок"
+
+#: products/wpc-product.php:9 products/wpc-product.php:10
+msgid "WP Catalogue"
+msgstr "WP Catalogue"
+
+#: products/wpc-product.php:11 products/wpc-product.php:12
+#: products/wpc-product.php:14
+msgid "Add New Product"
+msgstr "Добавить новый продукт"
+
+#: products/wpc-product.php:13
+msgid "Edit Product"
+msgstr "Редактировать продукт"
+
+#: products/wpc-product.php:15
+msgid "View Product"
+msgstr "Просмотреть продукт"
+
+#: products/wpc-product.php:16
+msgid "Search WPC Product"
+msgstr "Искать WPC продукт"
+
+#: products/wpc-product.php:17
+msgid "No Product found"
+msgstr "Продукт не найден"
+
+#: products/wpc-product.php:18
+msgid "No Product found in trash"
+msgstr "Продукт не найден в удаленном"
+
+#: products/wpc-product.php:109
+msgctxt "taxonomy general name"
+msgid "Categories"
+msgstr "Категории"
+
+#: products/wpc-product.php:110
+msgctxt "taxonomy singular name"
+msgid "Categories"
+msgstr "Категории"
+
+#: products/wpc-product.php:111
+msgid "Search Categories"
+msgstr "Поиск категорий"
+
+#: products/wpc-product.php:112
+msgid "All Categories"
+msgstr "Все категории"
+
+#: products/wpc-product.php:113
+msgid "Parent Categories"
+msgstr "Родительские категории"
+
+#: products/wpc-product.php:114
+msgid "Parent Categories:"
+msgstr "Родительские категории:"
+
+#: products/wpc-product.php:115
+msgid "Edit Categories"
+msgstr "Редактировать категории:"
+
+#: products/wpc-product.php:116
+msgid "Update Categories"
+msgstr "Обновить категории"
+
+#: products/wpc-product.php:117
+msgid "Add New Categories"
+msgstr "Добавить новые категории"
+
+#: products/wpc-product.php:118
+msgid "New Categories Name"
+msgstr "Имя новой категории"
+
+#: products/wpc-product.php:119
+msgid "Categories"
+msgstr "Категории"
+
+#: products/wpc-product.php:134
+msgid "Title"
+msgstr "Заголовок"
+
+#: products/wpc-product.php:135
+msgid "<a href=\"javascript:;\">Category</a>"
+msgstr "<a href=\"javascript:;\">Category</a>"
+
+#: products/wpc-product.php:136
+msgid "Date"
+msgstr "Дата"
+
+#: products/wpc-product.php:167
+msgid "No Category"
+msgstr "Нет категории"
+
+#: settings.php:4
+msgid " Settings"
+msgstr "Настройки"
+
+#: settings.php:7
+msgid "Settings updated successfully"
+msgstr "Настройки успешно обновлены"
+
+#: settings.php:11
+msgid "Settings"
+msgstr "Настройки"
+
+#: settings.php:14
+msgid ""
+"Adjust the basic presentation of your product catalogue here. It is "
+"important to set this up before you start uploading products so the plugin "
+"knows what size to generate thumbnails and product images"
+msgstr ""
+"Здесь вы можете настроить базовый вид вашего каталога здесь. Это важно "
+"сделать  перед тем как вы начнете загружать продукты, чтобы плагин знал "
+"размер для генерации размеров картинок."
+
+#: settings.php:15
+msgid ""
+"You can further customise the design of your product catalogue in your theme "
+"css."
+msgstr ""
+"Детальнее вы можете настроить дизайт вашего каталога продуктов в css вашей "
+"темы."
+
+#: settings.php:21
+msgid "Grid Rows"
+msgstr "Ряды решетки"
+
+#: settings.php:33
+msgid "products per row"
+msgstr "продуктов в ряду"
+
+#: settings.php:38
+msgid "Choose Theme Color"
+msgstr "Выберите цвет темы"
+
+#: settings.php:42
+msgid "Pagination"
+msgstr "Настройки страниц"
+
+#: settings.php:44
+msgid "products per page (use 0 for unlimited)"
+msgstr "продуктов на страницу (используйте 0 для неограниченого количества)"
+
+#: settings.php:47
+msgid "Gallery Image"
+msgstr "Галерея изображений"
+
+#: settings.php:49 settings.php:60
+msgid "Height"
+msgstr "Высота"
+
+#: settings.php:51 settings.php:62
+msgid "Width"
+msgstr "Ширина"
+
+#: settings.php:58
+msgid "Thumbnail"
+msgstr "Thumbnail"
+
+#: settings.php:64
+msgid "Scale & Crop"
+msgstr "Изменить маштаб и вырезать"
+
+#: settings.php:65
+msgid "Scale To Fit"
+msgstr "Масштабировать до подходящего размера"
+
+#: settings.php:69
+msgid "Show Next/Prev Links"
+msgstr "Показать следующую/предыдущую ссылки"
+
+#: settings.php:77
+msgid "Inner Template Header"
+msgstr "Внутренний шаблон заголовка"
+
+#: settings.php:79
+msgid ""
+"Use this area to add your theme layout divs if you are having problems with "
+"inner pages of the catalogue."
+msgstr ""
+"Используйте эту область чтобы добавить div вашего лейаута темы, в случае "
+"если у вас пробемы с внутренними страницами каталога"
+
+#: settings.php:82
+msgid "Inner Template Footer"
+msgstr "Внутренний шаблон футера"
+
+#: settings.php:84
+msgid "Use this area to close the open divs after the WP Catalogue."
+msgstr "Используйте эту область чтоб откыть откытые divы после WP Catalogue"
+
+#: settings.php:104
+msgid ""
+"Enjoyed this plugin? All donations are used to improve and further develop "
+"this plugin. Thanks for your contribution."
+msgstr ""
+"Понравилсяь плагин? Все пожертвования будут использованы чтобы улучшить этот "
+"плагин. Спосибо за вклад."
+
+#: settings.php:121
+msgid "Need Support?"
+msgstr "Нужна поддержка?"
+
+#: settings.php:125
+msgid "Check out the"
+msgstr "Посмотреть"
+
+#: settings.php:125
+msgid "and"
+msgstr "и"
+
+#: settings.php:125
+msgid "Support Forums"
+msgstr "Форум поддержки"
