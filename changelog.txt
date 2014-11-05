@@ -1,0 +1,5 @@
+WP Catalogue
+
+==* v1.7.2 *==
+
+*	Breadcrumb issue on category page fixed
