@@ -65,8 +65,14 @@ $termsCatSort	=	get_terms('wpccategories', $args);
 			$pname	=	'>> '.get_the_title();	
 		}
 		
+                $page_slug = get_queried_object()->slug;
+                $page_name = get_queried_object()->name;
+                $page_id = get_queried_object()->term_id;
+                
+                $page_url	=	get_bloginfo('siteurl').'/?wpccategories=/'.$page_slug;
+                
 		$return_string = '<div id="wpc-catalogue-wrapper">';
-		$return_string .= '<div class="wp-catalogue-breadcrumb"> <a href="'.$catalogue_page_url.'">All Products</a> &gt;&gt; <a href="'.$cat_url.'">'.$tname.'</a>  ' . $pname . '</div>';
+		$return_string .= '<div class="wp-catalogue-breadcrumb"> <a href="'.$catalogue_page_url.'">All Products</a> &gt;&gt; <a href="'.$page_url.'">'.$page_name.'</a>  ' . $pname . '</div>';
 		$return_string .= '<div id="wpc-col-1">';
         $return_string .= '<ul class="wpc-categories">';
 		
@@ -149,9 +155,11 @@ $termsCatSort	=	get_terms('wpccategories', $args);
 				  if(!get_option('tcroping')){
 					  $return_string .=  '" width="' .$img_width. '"'; }
 				 $return_string .= '" /></a></div>';
-				 $return_string .= '<p class="wpc-title"><a href="'. $permalink .'">' . $title . '</a></p>';
+				 $return_string .= '<p class="wpc-title"><a href="'.$permalink.'">' . $title . '</a></p>';
 				 $return_string .= '</div>';
+;
 				 $return_string .= '<!--/wpc-product-->';
+                                 
 				if($i == get_option('grid_rows'))
 			{
 				$return_string .= '<br clear="all" />';

@@ -7,6 +7,7 @@
 	 $terms	=	get_terms('wpccategories');
 		global $post;
 		$terms1 = get_the_terms($post->id, 'wpccategories');
+                
 		if($terms1){
 		foreach( $terms1 as $term1 ){
 			$slug	= $term1->slug;
@@ -18,6 +19,7 @@
 		if(is_single()){
 			$pname	=	'&gt;&gt;'.get_the_title();	
 		}
+                
 		echo '<div class="wp-catalogue-breadcrumb"> <a href="'.$catalogue_page_url.'">All Products</a> &gt;&gt; <a href="'.$cat_url.'">'.$tname.'</a>  ' . $pname . '</div>';
 		 ?>
     	<div id="wpc-catalogue-wrapper">
