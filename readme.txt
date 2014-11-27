@@ -109,6 +109,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.7.3 =
+* Re-implementing pagination fix
+
 = 1.7.2 =
 * Bug fix for breadcrumb
 
@@ -152,6 +155,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.7.3 =
+* Re-implementing pagination fix
 
 = 1.7.2 =
 * Bug fix for breadcrumb
