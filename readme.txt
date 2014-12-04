@@ -109,6 +109,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.7.4 =
+* Turkish translation updated
+
 = 1.7.3 =
 * Re-implementing pagination fix
 

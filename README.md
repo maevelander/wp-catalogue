@@ -1,5 +1,8 @@
 WP Catalogue
 
+==* v1.7.4 *==
+*	Turkish translation updated
+
 ==* v1.7.3 *==
 *	Pagination issue on category pages fixed
 
