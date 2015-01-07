@@ -1,253 +1,309 @@
-# Copyright (C) 2013 
-# This file is distributed under the same license as the  package.
 msgid ""
 msgstr ""
-"Project-Id-Version: \n"
+"Project-Id-Version: WP Catalogue v1.7.3\n"
 "Report-Msgid-Bugs-To: http://wordpress.org/tag/wp-catalogue\n"
 "POT-Creation-Date: 2013-08-30 07:47:30+00:00\n"
+"PO-Revision-Date: 2014-12-03 13:20:58+0000\n"
+"Last-Translator: Abdullah Şahin <web@yesis.net>\n"
+"Language-Team: Enigma Plugins\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2013-11-13 13:19+0200\n"
-"Last-Translator: Abdullah Şahin <web@yesis.net>\n"
-"Language-Team: Enigma Plugins\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Poedit 1.5.7\n"
+"X-Poedit-Language: \n"
+"X-Poedit-Country: \n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: \n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
 
 #: products/order.php:38
+#@ wpc
 msgid "Custom Taxonomy Order settings "
 msgstr "Özel Vergi/Sipariş Ayarları"
 
 #: products/order.php:139
-msgid ""
-"Drag and drop items to customise the order of categories in WP Catalogue"
-msgstr ""
-"Kategorileri sıralamasını düzenlemek için sürükleyip ilgili alana bırakın"
+#@ wpc
+msgid "Drag and drop items to customise the order of categories in WP Catalogue"
+msgstr "Kategorileri sıralamasını düzenlemek için sürükleyip ilgili alana bırakın"
 
-#: products/order.php:166 products/order.php:335
-#: products/sort-categories.php:57 products/sort-categories.php:74
-#: products/sort-products.php:56 products/sort-products.php:73
+#: products/order.php:166
+#: products/order.php:335
+#: products/sort-categories.php:57
+#: products/sort-categories.php:74
+#: products/sort-products.php:56
+#: products/sort-products.php:73
+#@ wpc
 msgid "Save Order"
 msgstr "Siparişi kaydet"
 
 #: products/order.php:172
+#@ wpc
 msgid "No terms found"
 msgstr "Herhangi bir kural bulunamadı"
 
 #: products/order.php:315
+#@ wpc
 msgid "Drag and drop items to customise the order of products in WP Catalogue"
-msgstr ""
-"Kategorileri sıralamasını düzenlemek için sürükleyip ilgili alana bırakın"
+msgstr "Kategorileri sıralamasını düzenlemek için sürükleyip ilgili alana bırakın"
 
-#: products/order.php:353 settings.php:100
+#: products/order.php:353
+#: settings.php:100
+#@ wpc
 msgid "Help Improve This Plugin!"
 msgstr "Bu eklentinin gelişimine destek olun!"
 
 #: products/order.php:357
-msgid ""
-"Enjoyed this plugin? All donations are used to improve and further develop "
-"this plugin. Thanks for your contributaion."
-msgstr ""
-"Eklentiyi beğendiniz mi? Tüm bağışlar bu eklentinin gelişimi için "
-"kullanıcaktır. Desteğiniz için teşekkürler."
+#@ wpc
+msgid "Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contributaion."
+msgstr "Eklentiyi beğendiniz mi? Tüm bağışlar bu eklentinin gelişimi için kullanıcaktır. Desteğiniz için teşekkürler."
 
-#: products/order.php:368 settings.php:115
+#: products/order.php:368
+#: settings.php:115
+#@ wpc
 msgid "you can also help by"
 msgstr "Bize bu şekilde de yardım edebilirsiniz"
 
-#: products/order.php:368 settings.php:115
+#: products/order.php:368
+#: settings.php:115
+#@ wpc
 msgid "rating this plugin on wordpress.org"
 msgstr "wordpress.org üzerinden bu eklentiyi oylayın"
 
 #: products/order.php:378
+#@ wpc
 msgid "If you are having problems with plugin please talk about them on "
 msgstr "Eklentiyle alaklı sorunlarınızı bize buradan ulaştırabilirsiniz"
 
 #: products/order.php:408
+#@ wpc
 msgid "Order updated successfully."
 msgstr "Siparişiniz başarıyla güncellendi"
 
 #: products/order.php:412
+#@ wpc
 msgid "An error occured, order has not been saved."
 msgstr "Bir hata Oluştu ve Kayıt başarısız oldu."
 
-#: products/sort-categories.php:54 products/sort-products.php:53
+#: products/sort-categories.php:54
+#: products/sort-products.php:53
+#@ wpc
 msgid "Drag and drop items to set the custom order."
 msgstr "Sıralamayı sürükle bırak mantığıyla yapabilirsiniz."
 
-#: products/wpc-product.php:9 products/wpc-product.php:10
+#: products/wpc-product.php:9
+#: products/wpc-product.php:10
+#@ default
 msgid "WP Catalogue"
 msgstr "Araçlar"
 
-#: products/wpc-product.php:11 products/wpc-product.php:12
+#: products/wpc-product.php:11
+#: products/wpc-product.php:12
 #: products/wpc-product.php:14
+#@ default
 msgid "Add New Product"
 msgstr "Yeni Ürün Ekle"
 
 #: products/wpc-product.php:13
+#@ default
 msgid "Edit Product"
 msgstr "Ürünü Düzelt"
 
 #: products/wpc-product.php:15
+#@ default
 msgid "View Product"
 msgstr "Ayrıntıları Görüntüle"
 
 #: products/wpc-product.php:16
+#@ default
 msgid "Search WPC Product"
 msgstr "Ürünlerde Ara"
 
 #: products/wpc-product.php:17
+#@ default
 msgid "No Product found"
 msgstr "Hiç bir ürün bulunamadı"
 
 #: products/wpc-product.php:18
+#@ default
 msgid "No Product found in trash"
 msgstr "Çöpte hiç bir ürün bulunamnadı"
 
 #: products/wpc-product.php:109
+#@ default
 msgctxt "taxonomy general name"
 msgid "Categories"
 msgstr "Kategoriler"
 
 #: products/wpc-product.php:110
+#@ default
 msgctxt "taxonomy singular name"
 msgid "Categories"
 msgstr "Kategoriler"
 
 #: products/wpc-product.php:111
+#@ default
 msgid "Search Categories"
 msgstr "Kategorilerde ara"
 
 #: products/wpc-product.php:112
+#@ default
 msgid "All Categories"
 msgstr "Tüm Kategoriler"
 
 #: products/wpc-product.php:113
+#@ default
 msgid "Parent Categories"
 msgstr "Üst Kategori"
 
 #: products/wpc-product.php:114
+#@ default
 msgid "Parent Categories:"
 msgstr "Üst Kategoriler:"
 
 #: products/wpc-product.php:115
+#@ default
 msgid "Edit Categories"
 msgstr "Kategorileri Düzenle"
 
 #: products/wpc-product.php:116
+#@ default
 msgid "Update Categories"
 msgstr "Kategorileri Güncelle"
 
 #: products/wpc-product.php:117
+#@ default
 msgid "Add New Categories"
 msgstr "Yeni Kategori Ekle"
 
 #: products/wpc-product.php:118
+#@ default
 msgid "New Categories Name"
 msgstr "Yeni Kategori Adı"
 
 #: products/wpc-product.php:119
+#@ default
 msgid "Categories"
 msgstr "Kategoriler"
 
 #: products/wpc-product.php:134
+#@ default
 msgid "Title"
 msgstr "Başlık"
 
 #: products/wpc-product.php:135
+#@ default
 msgid "<a href=\"javascript:;\">Category</a>"
 msgstr "<a href=\"javascript:;\">Kategori</a>"
 
 #: products/wpc-product.php:136
+#@ default
 msgid "Date"
 msgstr "Tarih"
 
 #: products/wpc-product.php:167
+#@ default
 msgid "No Category"
 msgstr "Kategori Yok"
 
 #: settings.php:4
+#@ wpc
 msgid " Settings"
 msgstr "Ayarlar"
 
 #: settings.php:7
+#@ wpc
 msgid "Settings updated successfully"
 msgstr "Ayarlar başarıyla güncellendi"
 
 #: settings.php:11
+#@ wpc
 msgid "Settings"
 msgstr "Ayarlar"
 
 #: settings.php:14
-msgid ""
-"Adjust the basic presentation of your product catalogue here. It is "
-"important to set this up before you start uploading products so the plugin "
-"knows what size to generate thumbnails and product images"
-msgstr ""
-"Ürün Kataloğuyla ilgili ayarları buradan yapabilirsiniz, önemli olan "
-"ürünlerin görsellerini yüklemeden boyutlandırmaları bilmeniz."
+#@ wpc
+msgid "Adjust the basic presentation of your product catalogue here. It is important to set this up before you start uploading products so the plugin knows what size to generate thumbnails and product images"
+msgstr "Ürün Kataloğuyla ilgili ayarları buradan yapabilirsiniz, önemli olan ürünlerin görsellerini yüklemeden boyutlandırmaları bilmeniz."
 
 #: settings.php:15
-msgid ""
-"You can further customise the design of your product catalogue in your theme "
-"css."
+#@ wpc
+msgid "You can further customise the design of your product catalogue in your theme css."
 msgstr "Css dosyası üzerinden genel temayı değiştirebilirsiniz."
 
 #: settings.php:21
+#@ wpc
 msgid "Grid Rows"
-msgstr "Klavuz Satırlar"
+msgstr "Kılavuz Satırlar"
 
 #: settings.php:33
+#@ wpc
 msgid "products per row"
 msgstr "Her satırdaki ürünler"
 
 #: settings.php:38
+#@ wpc
 msgid "Choose Theme Color"
 msgstr "Tema Rengi Seç"
 
 #: settings.php:42
+#@ wpc
 msgid "Pagination"
 msgstr "Sayfa numaraları"
 
 #: settings.php:44
+#@ wpc
 msgid "products per page (use 0 for unlimited)"
 msgstr "Bir sayfa içindeki ürün sayısı (sınırsız için 0)"
 
 #: settings.php:47
+#@ wpc
 msgid "Gallery Image"
 msgstr "Galeri Görseli"
 
-#: settings.php:49 settings.php:60
+#: settings.php:49
+#: settings.php:60
+#@ wpc
 msgid "Height"
 msgstr "Yükseklik"
 
-#: settings.php:51 settings.php:62
+#: settings.php:51
+#: settings.php:62
+#@ wpc
 msgid "Width"
 msgstr "Genişlik"
 
 #: settings.php:58
+#@ wpc
 msgid "Thumbnail"
 msgstr "Küçük Resim"
 
 #: settings.php:64
+#@ wpc
 msgid "Scale & Crop"
 msgstr "Boyutlandır & Kırp"
 
 #: settings.php:65
+#@ wpc
 msgid "Scale To Fit"
 msgstr "Uzatarak Boyutlandır"
 
 #: settings.php:69
+#@ wpc
 msgid "Show Next/Prev Links"
 msgstr "Sonraki/Önceki Butonlarını Göster"
 
 #: settings.php:77
+#@ wpc
 msgid "Inner Template Header"
 msgstr "İç Şablon Başlığı"
 
 #: settings.php:79
-msgid ""
-"Use this area to add your theme layout divs if you are having problems with "
-"inner pages of the catalogue."
+#@ wpc
+msgid "Use this area to add your theme layout divs if you are having problems with inner pages of the catalogue."
 msgstr "Bu bölüme katalog görünümünü ekleyebilirsiniz."
 
 #: settings.php:82
@@ -255,29 +311,32 @@ msgid "Inner Template Footer"
 msgstr "İç Şablon Altbilgisi"
 
 #: settings.php:84
+#@ wpc
 msgid "Use this area to close the open divs after the WP Catalogue."
 msgstr "Bu bölümü katalogdan sonraki divleri kapatmak için kullanabilirsiniz."
 
 #: settings.php:104
-msgid ""
-"Enjoyed this plugin? All donations are used to improve and further develop "
-"this plugin. Thanks for your contribution."
-msgstr ""
-"Eklentiyi beğendiniz mi? Tüm bağışlar bu eklentinin gelişimi için "
-"kullanıcaktır. Desteğiniz için teşekkürler."
+#@ wpc
+msgid "Enjoyed this plugin? All donations are used to improve and further develop this plugin. Thanks for your contribution."
+msgstr "Eklentiyi beğendiniz mi? Tüm bağışlar bu eklentinin gelişimi için kullanıcaktır. Desteğiniz için teşekkürler."
 
 #: settings.php:121
+#@ wpc
 msgid "Need Support?"
 msgstr "Yardıma mı ihtiyacınız var?"
 
 #: settings.php:125
+#@ wpc
 msgid "Check out the"
 msgstr "Bunu deneyin"
 
 #: settings.php:125
+#@ wpc
 msgid "and"
 msgstr "ve"
 
 #: settings.php:125
+#@ wpc
 msgid "Support Forums"
 msgstr "Destek Forumları"
+
