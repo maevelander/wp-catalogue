@@ -89,7 +89,6 @@ add_action( 'admin_init', 'register_catalogue_settings' );
 $plugin_dir_path = dirname(__FILE__);
 
 function register_catalogue_settings() {
-    update_option('posts_per_page',get_option('pagination'));
     register_setting( 'baw-settings-group', 'grid_rows' );
     register_setting( 'baw-settings-group', 'templateColorforProducts' );  // new added color picker
     register_setting( 'baw-settings-group', 'pagination' );
