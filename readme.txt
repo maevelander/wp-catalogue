@@ -3,7 +3,7 @@ Contributors: EnigmaWeb
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CEJ9HFWJ94BG4
 Tags: WP Catalogue, catalogue, catalog, product catalog, product catalogue, display products, wp catalog, list products, products
 Requires at least: 3.1
-Tested up to: 4.0
+Tested up to: 4.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -18,7 +18,7 @@ Use WP Catalogue to display your products in an attractive and professional cata
 
 *	Simple, light-weight product catalogue
 *	Add up to 3 images per product, displaying in an interactive lightbox
-*   Customise your catalogue presentation easily (choose theme colour, set image sizes, number of products per page, pagination, grid layout etc)
+* Customise your catalogue presentation easily (choose theme colour, set image sizes, number of products per page, pagination, grid layout etc)
 *	Completely customise the design of the catalogue via your theme css - great for designers/developers
 *	Integrated breacrumb for easy hassel-free navigation
 *	Next/Previous navigation (optional)
@@ -90,6 +90,7 @@ It's most likely just a matter of tweaking the css. In particular check the widt
 = Can I use WP Catalogue in my Language? =
 
 Yes, the plugin is internationalized and ready for translation. If you would like to help with a translation please [contact me](http://www.enigmaweb.com.au/contact)
+You can also use it WPML. After installing and activating both plugins, go to WPML > Translation Management > Multilangual Content Setup > scroll all the way down > tick the checkbox 'custom posts' and 'custom taxanomies' for this post type, set to 'Translate'.
 
 = Can import/export my catalogue? =
 
@@ -111,6 +112,8 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 = 1.7.4 =
 * Turkish translation updated
+* posts_per_page issue fixed
+* Detail page pagination fixed
 
 = 1.7.3 =
 * Re-implementing pagination fix
@@ -158,6 +161,11 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.7.4 =
+* Turkish translation updated
+* posts_per_page issue fixed
+* Detail page pagination fixed
 
 = 1.7.3 =
 * Re-implementing pagination fix
