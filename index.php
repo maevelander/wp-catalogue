@@ -4,10 +4,23 @@ Plugin Name: WP Catalogue
 Plugin URI: http://www.wordpress.org/extend/plugins/wp-catalogue/
 Description: Display your products in an attractive and professional catalogue. It's easy to use, easy to customise, and lets you show off your products in style.
 Author: Maeve Lander
-Version: 1.7.4
+Version: 1.7.5
 Author URI: http://www.enigmaweb.com.au
 */
 //creating db tables
+
+// style for listing
+add_action('wp_head','wpc_list_style');
+function wpc_list_style(){
+?>
+    <style>
+        .wpc-product img, .product-img-view img, .wpc-product-img img{
+            margin-left:0;
+        }
+
+    </style>
+<?php
+}
 
 function customtaxorder_init() {
     global $wpdb;
@@ -17,9 +30,11 @@ function customtaxorder_init() {
         $wpdb->query("ALTER TABLE $wpdb->terms ADD `term_order` INT( 4 ) NULL DEFAULT '0'");
     }
 }
-
 register_activation_hook(__FILE__, 'customtaxorder_init');
-register_uninstall_hook('uninstall.php', $callback);
+
+register_uninstall_hook('uninstall.php', 'callback');
+function callback(){
+}
 
 require 'wpc-catalogue.php';
 require 'products/wpc-product.php';
@@ -47,12 +62,11 @@ function wp_catalogue_scripts_method(){
 }
 function wpc_admin_init(){
     $style_url = WP_CATALOGUE_CSS.'/sorting.css';
-    wp_register_style(WPC_STYLE, $style_url);
+    wp_register_style('WPC_STYLE', $style_url);
     
     $script_url = WP_CATALOGUE_JS.'/sorting.js';
-    wp_register_script(WPC_SCRIPT, $script_url, array('jquery', 'jquery-ui-sortable'));	
+    wp_register_script('WPC_SCRIPT', $script_url, array('jquery', 'jquery-ui-sortable'));	
 }
-
 add_action('admin_init', 'wpc_admin_init');
 add_action('wp_enqueue_scripts', 'front_scripts');
 
@@ -78,11 +92,11 @@ add_action('admin_print_styles', 'wpc_admin_styles');
 add_action('admin_print_scripts', 'wpc_admin_scripts');
 // add required styles
 function wpc_admin_styles(){
-    wp_enqueue_style(WPC_STYLE);
+    wp_enqueue_style('WPC_STYLE');
 }
 // add required scripts
 function wpc_admin_scripts(){
-    wp_enqueue_script(WPC_SCRIPT);
+    wp_enqueue_script('WPC_SCRIPT');
 }
 
 add_action( 'admin_init', 'register_catalogue_settings' );
@@ -98,44 +112,38 @@ function register_catalogue_settings() {
     register_setting( 'baw-settings-group', 'thumb_width' );
     register_setting( 'baw-settings-group', 'image_scale_crop' );
     register_setting( 'baw-settings-group', 'thumb_scale_crop' );
-    register_setting( 'baw-settings-group', 'croping' );
-    register_setting( 'baw-settings-group', 'tcroping' );
     register_setting( 'baw-settings-group', 'next_prev' );
     register_setting( 'baw-settings-group', 'inn_temp_head' );
     register_setting( 'baw-settings-group', 'inn_temp_foot' );
+    
+    add_option('image_height',358, '', 'yes');
+    add_option('image_width',500, '', 'yes');
+    add_option('thumb_height',151, '', 'yes');
+    add_option('thumb_width',212, '', 'yes');
 }
 
 function wp_catalogue_settings(){
     require 'settings.php';
 }
 require 'products/order.php';
-add_action("template_redirect", 'my_theme_redirect');
 
-function my_theme_redirect() {
-   	
-    global $wp;
-    $plugindir = dirname( __FILE__ );
+// Redirect file templates
+function wpc_template_chooser($wpc_template){
+    global $wp_query;
+    $wpc_plugindir = dirname(__FILE__);
+	
+    $post_type = get_query_var('post_type');
     
-    //A Specific Custom Post Type
-    if ($wp->query_vars["post_type"] == 'wpcproduct') {
-        $templatefilename = 'single-wpcproduct.php';
-        if (file_exists(TEMPLATEPATH . '/' . $templatefilename)) {
-            $return_template = TEMPLATEPATH . '/' . $templatefilename;
-        } else {
-            $return_template = $plugindir . '/themefiles/' . $templatefilename;
-        }
-        do_theme_redirect($return_template);
+    if( $post_type == 'wpcproduct' ){
+        return $wpc_plugindir . '/themefiles/single-wpcproduct.php';
     }
-	if (is_tax()) {
-        $templatefilename = 'taxonomy-wpccategories.php';
-        if (file_exists(TEMPLATEPATH . '/' . $templatefilename)) {
-            $return_template = TEMPLATEPATH . '/' . $templatefilename;
-        } else {
-            $return_template = $plugindir . '/themefiles/' . $templatefilename;
-        }
-        do_theme_redirect($return_template);
+	
+    if (is_tax()) {
+        return $wpc_plugindir . '/themefiles/taxonomy-wpccategories.php';
     }
+    return $wpc_template;   
 }
+add_filter('template_include', 'wpc_template_chooser');
 
 function do_theme_redirect($url) {
     global $post, $wp_query;
@@ -155,36 +163,5 @@ function mw_enqueue_color_picker( $hook_suffix ) {
     wp_enqueue_style( 'wp-color-picker' );
     wp_enqueue_script( 'my-script-handle', plugins_url('my-script.js', __FILE__ ), array( 'wp-color-picker' ), false, true );
 }
-/* ========================  Multicolor =========================== */
-
-load_plugin_textdomain( 'wpc', WPCACHEHOME . 'languages', basename( dirname( __FILE__ ) ) . '/languages' );
-
-/* ========================  Take User Defined color =========================== */
-
-add_action('wp_head', 'colorPalette');
-function colorPalette() { ?>
-
-<style type="text/css">
-.wpc-img:hover {
- border: 5px solid <?php echo get_option('templateColorforProducts');
-?> !important;
-}
-.wpc-title {
- color: <?php echo get_option('templateColorforProducts');
-?> !important;
-}
-.wpc-title a:hover {
- color: <?php echo get_option('templateColorforProducts');
-?> !important;
-}
-#wpc-col-1 ul li a:hover, #wpc-col-1 ul li.active-wpc-cat a {
-	border-right: none;
- background:<?php echo get_option('templateColorforProducts');
-?> no-repeat left top !important;
-}
-.wpc-paginations a:hover, .wpc-paginations .active-wpc-page {
-	background: <?php echo get_option('templateColorforProducts');
-?> !important;
-}
-</style>
-<?php }
+/* ========================  Text Domain =========================== */
+load_plugin_textdomain( 'wpc', 'WPCACHEHOME' . 'languages', basename( dirname( __FILE__ ) ) . '/languages' );

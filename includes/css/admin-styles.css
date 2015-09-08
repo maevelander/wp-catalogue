@@ -2,169 +2,157 @@
 /* CSS Document */
 
 .wpc-left-liquid{
-	float: left;
-	clear: left;
-	width: 100%;
-	margin-right: -325px;
-	margin-top:6px;	
+    float: left;
+    clear: left;
+    width: 100%;
+    margin-right: -325px;
+    margin-top:6px;	
 }
 .wpc-left{
-	margin: 10px 325px 0 5px;
-	margin-right: ;	
+    margin: 10px 325px 0 5px;
 }
 .wpc-left td{
-	line-height:30px;	
+    line-height:30px;	
 }
 .wpc-grey-boxes{
-	margin-bottom:15px;
-	
+    margin-bottom:15px;
 }
 .wpc-long{
-	margin:15px 0 0 890px;	
+    margin:15px 0 0 890px;	
 }
 .wpc-short{
-	margin:15px 0 0 278px;	
+    margin:15px 0 0 278px;	
 }
 .wpc-grey-boxes span{
-	position:absolute;
-	background:url(images/toggle.jpg) no-repeat bottom;
-	display:inline-block;
-	height:7px;
-	width:7px;
-	text-indent:-9000px;
-	cursor:pointer;
+    position:absolute;
+    background:url(images/toggle.jpg) no-repeat bottom;
+    display:inline-block;
+    height:7px;
+    width:7px;
+    text-indent:-9000px;
+    cursor:pointer;
 }
 .wpc-grey-boxes span:hover{
-	background:url(images/toggle.jpg) no-repeat top;	
+    background:url(images/toggle.jpg) no-repeat top;	
 }
 div.wpc-headings{
-	cursor: pointer;
-	font-size: 13px;
-	border-width: 1px;
-	border-style: solid;
-	-webkit-border-top-right-radius: 3px;
-	-webkit-border-top-left-radius: 3px;
-	border-top-right-radius: 3px;
-	border-top-left-radius: 3px;
-	color: #464646;
-	text-shadow: white 0 1px 0;
-	border-color: #DFDFDF;
-	-moz-box-shadow: inset 0 1px 0 #fff;
-	-webkit-box-shadow: inset 0 1px 0 white;
-	box-shadow: inset 0 1px 0 white;
-	background-color: #F1F1F1;
-	background-image: -ms-linear-gradient(top,#F9F9F9,#ECECEC);
-	background-image: -moz-linear-gradient(top,#F9F9F9,#ECECEC);
-	background-image: -o-linear-gradient(top,#F9F9F9,#ECECEC);
-	background-image: -webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#ECECEC));
-	background-image: -webkit-linear-gradient(top,#F9F9F9,#ECECEC);
-	background-image: linear-gradient(top,#F9F9F9,#ECECEC);
-	margin-top:15px;	
+    cursor: pointer;
+    font-size: 13px;
+    border-width: 1px;
+    border-style: solid;
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    color: #464646;
+    text-shadow: white 0 1px 0;
+    border-color: #DFDFDF;
+    -moz-box-shadow: inset 0 1px 0 #fff;
+    -webkit-box-shadow: inset 0 1px 0 white;
+    box-shadow: inset 0 1px 0 white;
+    background-color: #F1F1F1;
+    background-image: -ms-linear-gradient(top,#F9F9F9,#ECECEC);
+    background-image: -moz-linear-gradient(top,#F9F9F9,#ECECEC);
+    background-image: -o-linear-gradient(top,#F9F9F9,#ECECEC);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#F9F9F9),to(#ECECEC));
+    background-image: -webkit-linear-gradient(top,#F9F9F9,#ECECEC);
+    background-image: linear-gradient(top,#F9F9F9,#ECECEC);
+    margin-top:15px;	
 }
-
 .wpc-headings h3{
-	font-weight: normal;
-	font-size: 15px;
-	margin: 0;
-	padding: 8px 10px;
-	overflow: hidden;
-	white-space: nowrap;
-	font-family:Georgia, "Times New Roman", Times, serif;	
+    font-weight: normal;
+    font-size: 15px;
+    margin: 0;
+    padding: 8px 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-family:Georgia, "Times New Roman", Times, serif;
 }
 .wpc-headings .sidebar-name-arrow{
-	margin-top:-7px;
-	height:22px;	
+    margin-top:-7px;
+    height:22px;
 }
 .wpc-inner{
-	border:solid 1px #DFDFDF;
-	border-top:none;
-	padding:10px;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;	
+    border:solid 1px #DFDFDF;
+    border-top:none;
+    padding:10px;
+    border-bottom-left-radius:5px;
+    border-bottom-right-radius:5px;
 }
 .closed .inner-in-prod{
-	display:none;	
+    display:none;	
 }
 .inner-in-prod{
-	background-color:#F8F8F8;
-	margin-bottom:15px;
-	
+    background-color:#F8F8F8;
+    margin-bottom:15px;
 }
 .wpc-inner p{
-	margin:20px 0;
-	line-height:22px;	
+    margin:20px 0;
+    line-height:22px;	
 }
 .wpc-right-liquid{
-	width:300px;
-	float:right;
-	clear:right;
-	margin-top:16px;
+    width:300px;
+    float:right;
+    clear:right;
+    margin-top:16px;
 }
 .wpc-right-liquid .wpc-headings{
-	margin-top:0 !important;
+    margin-top:0 !important;
 }
 .wpc-right-liquid table{
-	margin:7px 0 20px 0;	
+    margin:7px 0 20px 0;	
 }
 .wpc-right-liquid td{
-	line-height:24px;	
+    line-height:24px;	
 }
-
 .widefield{
-	width:100%;
-	border:solid 1px #CCC;
-	padding:3px 8px;
-	line-height:30px;
-	font-size: 1.7em;
-	background:transparent !important;	
+    width:100%;
+    border:solid 1px #CCC;
+    padding:3px 8px;
+    line-height:30px;
+    font-size: 1.7em;
+    background:transparent !important;
 }
 .wpc-prod-title label{
-	color: #BBB;
-	position: absolute;
-	font-size: 1.7em;
-	padding: 11px 10px;
-	cursor:text;
-	z-index:-1;
+    color: #BBB;
+    position: absolute;
+    font-size: 1.7em;
+    padding: 11px 10px;
+    cursor:text;
+    z-index:-1;
 }
 .wpc-prod-desc{
-	margin-top:20px;	
+    margin-top:20px;	
 }
-
 #wpc-prod-desc{
-	font-family: Consolas,Monaco,monospace;
-	padding: 10px;
-	line-height: 150%;
-	border: solid 1px #ccc;
-	outline: 0;
-	resize: vertical;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	width:99.9%;
+    font-family: Consolas,Monaco,monospace;
+    padding: 10px;
+    line-height: 150%;
+    border: solid 1px #ccc;
+    outline: 0;
+    resize: vertical;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width:99.9%;
 }
 .wpc-cat-label{
-	margin-left:5px;	
+    margin-left:5px;	
 }
-
-	
 .upload-url{
-	width:50%;
-	margin-right:10px;	
+    width:50%;
+    margin-right:10px;
 }
 .st_upload_button{
-	background: white;
-	border: solid 1px #CCC;
-	cursor: pointer;
+    background: white;
+    border: solid 1px #CCC;
+    cursor: pointer;
 }
-
 #order-submit{
-	margin-top:15px;	
+    margin-top:15px;	
 }
-
 .inn_temp {
-	line-height: 16px;
-	font-family: "Courier New", Courier, monospace;
-	resize: none;
+    line-height: 16px;
+    font-family: "Courier New", Courier, monospace;
+    resize: none;
 }
-
-
