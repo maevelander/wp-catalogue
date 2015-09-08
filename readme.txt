@@ -109,6 +109,14 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+==* v1.7.5 *==
+* Added support for larger number of pagination ...
+* Added new function for resizing product images.
+* Replace template_redirect to template_include.
+* Replace get_bloginfo() to get_site_url().
+* Remove error_reporting(0).
+* Marked "All Products" string for translation.
+
 = 1.7.4 =
 * Turkish translation updated
 * posts_per_page issue fixed

@@ -96,21 +96,21 @@
 
                         <div class="wpc-product-img">
                         <?php
-                            if($img1):
+                            if($thumb_img1):
                         ?>
                                 <div class="new-prdct-img">
                                     <img src="<?php echo $thumb_img1; ?>" alt="" width="151" height="94" id="img1" />
                                 </div>
                         <?php
                             endif;
-                            if($img2):
+                            if($thumb_img2):
                         ?>
                                 <div class="new-prdct-img">
                                     <img src="<?php echo $thumb_img2; ?>" alt="" width="151" height="94" id="img2"/>
                                 </div>
                         <?php
                             endif;
-                            if($img3):
+                            if($thumb_img3):
                         ?>
                                 <div class="new-prdct-img">
                                     <img src="<?php echo $thumb_img3; ?>" alt="" width="151" height="94" id="img3"/>

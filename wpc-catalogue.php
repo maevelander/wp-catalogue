@@ -75,14 +75,14 @@ function catalogue() {
     $page_url = get_site_url().'/?wpccategories=/'.$page_slug;
 
     $return_string = '<div id="wpc-catalogue-wrapper">';
-    echo  '<div class="wp-catalogue-breadcrumb"> <a href="'.$catalogue_page_url.'">All Products</a> &gt;&gt; <a href="'.$page_url.'">'.$page_name.'</a>  ' . $pname . '</div>';
+    echo  '<div class="wp-catalogue-breadcrumb"> <a href="'.$catalogue_page_url.'">' . __("All Products", "wpc").'</a> &gt;&gt; <a href="'.$page_url.'">'.$page_name.'</a>  ' . $pname . '</div>';
     
     echo  '<div id="wpc-col-1">';
     echo  '<ul class="wpc-categories">';
 
         // generating sidebar
         if($count>0){
-            echo  '<li class="wpc-category ' . $class . '"><a href="'. get_option('catalogue_page_url') .'">All Products</a></li>';	
+            echo  '<li class="wpc-category ' . $class . '"><a href="'. get_option('catalogue_page_url') .'">'. __("All Products", "wpc").'</a></li>';	
             
             foreach($termsCatSort as $term){
                 if($term_slug==$term->slug){
