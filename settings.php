@@ -5,7 +5,9 @@
   <div class="wpc-left-liquid">
     <?php if ( isset( $_GET['settings-updated'] ) ) {
     echo "<div class='updated' style='margin-top:10px;'><p> WP Catalogue ". __('Settings updated successfully','wpc')."</p></div>";
-} ?>
+} 
+
+?>
     <div class="wpc-left">
       <div class="wpc-headings">
         <h3><?php _e('Settings','wpc') ?></h3>
@@ -40,8 +42,24 @@
               </tr>
               <tr valign="top">
                 <th scope="row"><label for="pagination"><?php _e('Pagination','wpc') ?> </label></th>
-                <td><input name="pagination" type="text" id="pagination" value="<?php if(get_option('pagination') or get_option('pagination')==0){ echo get_option('pagination'); }else {echo 20;} ?>" size="15">
-                  <span><?php _e('products per page (use 0 for unlimited)','wpc') ?></span></td>
+                <td><select id="pagination" name="pagination">
+                    <option value="2" <?php if(get_option('pagination')==2){echo 'selected="selected"';} ?> >2</option>
+                    <option value="3" <?php if(get_option('pagination')==3){echo 'selected="selected"';} ?>>3</option>
+                    <option value="4" <?php if(get_option('pagination')==4){echo 'selected="selected"';} ?>>4</option>
+                    <option value="5" <?php if(get_option('pagination')==5){echo 'selected="selected"';} ?>>5</option>
+                    <option value="6" <?php if(get_option('pagination')==6){echo 'selected="selected"';} ?>>6</option>
+                    <option value="7" <?php if(get_option('pagination')==7){echo 'selected="selected"';} ?>>7</option>
+                    <option value="8" <?php if(get_option('pagination')==8){echo 'selected="selected"';} ?>>8</option>
+                    <option value="9" <?php if(get_option('pagination')==9){echo 'selected="selected"';} ?>>9</option>
+                    <option value="10" <?php if(get_option('pagination')==10){echo 'selected="selected"';} ?>>10</option>
+                     <option value="11" <?php if(get_option('pagination')==11){echo 'selected="selected"';} ?>>11</option>
+                    <option value="12" <?php if(get_option('pagination')==12){echo 'selected="selected"';} ?>>12</option>
+                    <option value="13" <?php if(get_option('pagination')==13){echo 'selected="selected"';} ?>>13</option>
+                    <option value="14" <?php if(get_option('pagination')==14){echo 'selected="selected"';} ?>>14</option>
+                    <option value="15" <?php if(get_option('pagination')==15){echo 'selected="selected"';} ?>>15</option>
+                  </select>
+                  </td>
+                </td>
               </tr>
               <tr>
                 <th scope="row"><label><?php _e('Gallery Image','wpc') ?></label></th>
@@ -49,10 +67,6 @@
                   &nbsp;&nbsp;&nbsp;<span><?php _e('Height','wpc') ?></span>&nbsp;&nbsp;&nbsp;
                   <input name="image_width" type="text" id="image_width" value="<?php if(get_option('image_width')){ echo get_option('image_width'); }else {echo 500;} ?>" size="10">
                   &nbsp;&nbsp;&nbsp;<span><?php _e('Width','wpc') ?></span><br>
-                  <select id="croping" name="croping">
-                    <option value="image_scale_crop" <?php if(get_option('croping')=='image_scale_crop'){echo 'selected="selected"';} ?>>Scale & Crop</option>
-                    <option value="image_scale_fit" <?php if(get_option('croping')=='image_scale_fit'){echo 'selected="selected"';} ?>>Scale To Fit</option>
-                  </select></td>
               </tr>
               <tr>
                 <th scope="row"><label><?php _e('Thumbnail','wpc') ?></label></th>
@@ -60,10 +74,7 @@
                   &nbsp;&nbsp;&nbsp;<span><?php _e('Height','wpc') ?></span>&nbsp;&nbsp;&nbsp;
                   <input name="thumb_width" type="text" id="thumb_width" value="<?php if(get_option('thumb_width')){ echo get_option('thumb_width'); }else {echo 212;} ?>" size="10">
                   &nbsp;&nbsp;&nbsp;<span><?php _e('Width','wpc') ?></span><br>
-                  <select id="croping" name="tcroping">
-                    <option value="thumb_scale_crop" <?php if(get_option('tcroping')=='thumb_scale_crop'){echo 'selected="selected"';} ?>><?php _e('Scale & Crop','wpc') ?></option>
-                    <option value="thumb_scale_fit" <?php if(get_option('tcroping')=='thumb_scale_fit'){echo 'selected="selected"';} ?>><?php _e('Scale To Fit','wpc') ?></option>
-                  </select></td>
+                  
               </tr>
               <tr valign="top">
                 <th scope="row"><label for="pagination"><?php _e('Show Next/Prev Links','wpc') ?> </label></th>
