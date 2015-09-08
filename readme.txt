@@ -3,11 +3,7 @@ Contributors: EnigmaWeb
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CEJ9HFWJ94BG4
 Tags: WP Catalogue, catalogue, catalog, product catalog, product catalogue, display products, wp catalog, list products, products
 Requires at least: 3.1
-<<<<<<< HEAD
-Tested up to: 4.1
-=======
-Tested up to: 4.2
->>>>>>> development
+Tested up to: 4.3
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -114,13 +110,13 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
-==* v1.7.5 *==
-* Added support for larger number of pagination ...
-* Added new function for resizing product images.
-* Replace template_redirect to template_include.
-* Replace get_bloginfo() to get_site_url().
-* Remove error_reporting(0).
-* Marked "All Products" string for translation.
+= 1.7.5 =
+* Added support for larger number of pagination
+* Added new function for resizing product images
+* Replace template_redirect to template_include
+* Replace get_bloginfo() to get_site_url()
+* Remove error_reporting(0)
+* Marked missing strings for translation
 
 = 1.7.4 =
 * Turkish translation updated
@@ -173,6 +169,14 @@ If you've tried all the obvious stuff and it's still not working please request 
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.7.5 =
+* Added support for larger number of pagination
+* Added new function for resizing product images
+* Replace template_redirect to template_include
+* Replace get_bloginfo() to get_site_url()
+* Remove error_reporting(0)
+* Marked missing strings for translation
 
 = 1.7.4 =
 * Turkish translation updated
