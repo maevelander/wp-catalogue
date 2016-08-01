@@ -110,6 +110,9 @@ If you've tried all the obvious stuff and it's still not working please request 
 
 == Changelog ==
 
+= 1.7.6 =
+* uninstall.php issue fixed.
+
 = 1.7.5 =
 * Added support for larger number of pagination
 * Added new function for resizing product images
