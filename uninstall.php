@@ -23,9 +23,10 @@ $find_tax	=	$wpdb->get_results("SELECT term_taxonomy_id FROM wp_term_taxonomy WH
 $tax_id		=	$find_tax[0]['term_taxonomy_id'];
 foreach($find_tax as $find_tax1){
 	$tax_id	=	$find_tax1['term_taxonomy_id'];
-	$delete		=	$wpdb->query("DELETE FROM wp_term_relationships WHERE term_taxonomy_id='$tax_id'");	
-	$delete1	=	$wpdb->query("DELETE FROM wp_terms WHERE term_id='$tax_id'");
-	$delete1	=	$wpdb->query("DELETE FROM wp_term_taxonomy WHERE term_taxonomy_id='$tax_id'");	
+        
+	$delete_terms           =	$wpdb->query("DELETE FROM wp_terms WHERE term_id='$tax_id'");
+	$delete_relations	=	$wpdb->query("DELETE FROM wp_term_relationships WHERE term_taxonomy_id='$tax_id'");
+	$deletet_taxonommy	=	$wpdb->query("DELETE FROM wp_term_taxonomy WHERE term_taxonomy_id='$tax_id'");	
 }
 	
 $allprods	=	new WP_Query('post_type=wpcproduct&posts_per_page=-1');

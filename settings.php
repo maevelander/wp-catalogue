@@ -6,7 +6,6 @@
     <?php if ( isset( $_GET['settings-updated'] ) ) {
     echo "<div class='updated' style='margin-top:10px;'><p> WP Catalogue ". __('Settings updated successfully','wpc')."</p></div>";
 } 
-
 ?>
     <div class="wpc-left">
       <div class="wpc-headings">
